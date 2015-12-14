@@ -63,7 +63,7 @@ const webpackConfig = {
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-          cacheDirectory: true,
+          cacheDirectory: '_cache/babel',
           plugins: ['transform-runtime', 'add-module-exports'],
           presets: ['es2015', 'react', 'stage-0'],
           env: {
